@@ -1,0 +1,10 @@
+# Build / Test files
+coverage
+**/*.test.js
+
+# Docs / Site
+docs
+site
+
+# Configs
+rollup.config.js

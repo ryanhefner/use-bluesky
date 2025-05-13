@@ -1,0 +1,22 @@
+# Modules
+node_modules
+
+# Build / Test files
+coverage
+es
+umd
+/*.cjs
+
+# Example files
+TestComponent
+!src/TestComponent
+
+# Include Rollup config
+!rollup.config.js
+!vite.config.js
+
+# Misc
+.DS_Store
+
+# Dist
+dist/
