@@ -1,24 +1,23 @@
-# \[your package name\]
+# 🦋 use-bluesky
 
-\[package description\]
+React hooks to interact with Bluesky.
 
 ## Install
 
-Via [npm](https://npmjs.com/package/\[your-package-name\])
+Via [npm](https://npmjs.com/package/use-bluesky)
 
 ```sh
-npm install [your package name]
+npm install use-bluesky
 ```
 
-Via [Yarn](https://yarn.pm/\[your-package-name\])
+Via [Yarn](https://yarn.pm/use-bluesky)
 
 ```sh
-yarn add [your package name]
+yarn add use-bluesky
 ```
 
 ## How to use
 
-
 ## License
 
-[MIT](LICENSE) © \[your copyright info\]
+[MIT](LICENSE) © [Ryan Hefner](https://www.ryanhefner.com)

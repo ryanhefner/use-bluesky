@@ -1,11 +1,22 @@
 {
   "include": ["src/**/*"],
-  "exclude": ["src/**/*.test.js", "src/**/*.test.jsx"],
+  "exclude": [
+    "src/**/*.test.js",
+    "src/**/*.test.jsx",
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx"
+  ],
   "compilerOptions": {
     "allowJs": true,
     "checkJs": false,
     "declaration": true,
+    "declarationDir": "dist",
     "emitDeclarationOnly": true,
-    "outDir": "types"
+    "jsx": "react-jsx",
+    "outDir": "dist",
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "bundler"
   }
 }
