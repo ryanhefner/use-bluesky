@@ -1,18 +1,21 @@
 {
   "name": "use-bluesky",
-  "version": "0.0.1",
-  "description": "React hooks to interact with Bluesky",
+  "version": "0.0.2",
+  "description": "React hooks to interact with Bluesky API",
   "repository": {
     "type": "git",
     "url": "/ryanhefner/use-bluesky"
   },
-  "author": "Ryan Hefner <ryan@ryanhefner.com> (https://www.ryanhefner.com)",
+  "author": "Ryan Hefner <hi@ryanhefner.com> (https://www.ryanhefner.com)",
   "license": "MIT",
   "keywords": [
+    "atproto",
     "bluesky",
-    "react",
+    "bluesky-api",
+    "context-provider",
     "hooks",
-    "atproto"
+    "react",
+    "react-hooks"
   ],
   "type": "module",
   "files": [
