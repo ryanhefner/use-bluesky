@@ -2,6 +2,15 @@
 
 React hooks to interact with the Bluesky API.
 
+[![npm](https://img.shields.io/npm/v/use-bluesky?style=flat-square)](https://www.pkgstats.com/pkg:use-bluesky)
+[![NPM](https://img.shields.io/npm/l/use-bluesky?style=flat-square)](LICENSE)
+[![npm](https://img.shields.io/npm/dt/use-bluesky?style=flat-square)](https://www.pkgstats.com/pkg:use-bluesky)
+[![Coveralls github](https://img.shields.io/coveralls/github/ryanhefner/use-bluesky?style=flat-square)](https://coveralls.io/github/ryanhefner/use-bluesky)
+[![codecov](https://codecov.io/gh/ryanhefner/use-bluesky/branch/main/graph/badge.svg)](https://codecov.io/gh/ryanhefner/use-bluesky)
+[![CircleCI](https://img.shields.io/circleci/build/github/ryanhefner/use-bluesky?style=flat-square)](https://circleci.com/gh/ryanhefner/use-bluesky)
+![Known Vulnerabilities](https://snyk.io/test/github/ryanhefner/use-bluesky/badge.svg)
+![Twitter Follow](https://img.shields.io/twitter/follow/ryanhefner)
+
 ## Install
 
 Via [npm](https://npmjs.com/package/use-bluesky)
