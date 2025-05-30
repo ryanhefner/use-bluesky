@@ -3,7 +3,7 @@ import { createContext } from 'react'
 import { type Agent } from '@atproto/api'
 import { NodeOAuthClient } from '@atproto/oauth-client-node'
 
-type BlueskyContextValue = {
+export type BlueskyContextValue = {
   agent?: Agent
   client?: NodeOAuthClient
   baseUrl: string

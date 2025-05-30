@@ -1,10 +1,10 @@
 {
   "name": "use-bluesky",
-  "version": "0.0.2",
-  "description": "React hooks to interact with Bluesky API",
+  "version": "0.0.3",
+  "description": "React hooks to interact with the Bluesky API",
   "repository": {
     "type": "git",
-    "url": "/ryanhefner/use-bluesky"
+    "url": "https://github.com/ryanhefner/use-bluesky"
   },
   "author": "Ryan Hefner <hi@ryanhefner.com> (https://www.ryanhefner.com)",
   "license": "MIT",
@@ -18,6 +18,24 @@
     "react-hooks"
   ],
   "type": "module",
+  "bugs": {
+    "url": "https://github.com/ryanhefner/use-bluesky/issues"
+  },
+  "homepage": "https://github.com/ryanhefner/use-bluesky#readme",
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/ryanhefner"
+    },
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/ryanhefner"
+    },
+    {
+      "type": "opencollective",
+      "url": "https://opencollective.com/ryanhefner"
+    }
+  ],
   "files": [
     "dist",
     "src",
@@ -45,7 +63,7 @@
   },
   "peerDependencies": {
     "@atproto/api": ">=0.10",
-    "@atproto/oauth-client-node": ">=0.10",
+    "@atproto/oauth-client-node": ">=0.2",
     "@tanstack/react-query": ">=5.0",
     "react": ">=16.8",
     "react-dom": ">=16.8"
