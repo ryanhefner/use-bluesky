@@ -1,4 +1,4 @@
-import { PropsWithChildren, useState } from 'react'
+import { PropsWithChildren, useMemo } from 'react'
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
@@ -7,6 +7,7 @@ import { BlueskyContext } from './BlueskyContext'
 
 type BlueskyProviderProps = PropsWithChildren & {
   baseUrl?: string
+  queryClient?: QueryClient
   session?: any
   token?: string
 }
@@ -16,22 +17,26 @@ const queryClient = new QueryClient()
 export const BlueskyProvider = ({
   children,
   baseUrl = BLUESKY_API_URL,
+  queryClient: queryClientProp,
   session,
   token,
 }: BlueskyProviderProps) => {
-  const [localBaseUrl] = useState(baseUrl)
-  const [localToken] = useState(token)
-  const [localSession] = useState(session)
+  const localQueryClient = useMemo(
+    () => queryClientProp ?? queryClient,
+    [queryClientProp],
+  )
 
   return (
     <BlueskyContext.Provider
       value={{
-        baseUrl: localBaseUrl,
-        session: localSession,
-        token: localToken,
+        baseUrl,
+        session,
+        token,
       }}
     >
-      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+      <QueryClientProvider client={localQueryClient}>
+        {children}
+      </QueryClientProvider>
     </BlueskyContext.Provider>
   )
 }
