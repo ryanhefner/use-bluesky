@@ -25,8 +25,8 @@ const defaultOutputOptions = {
     'react/jsx-runtime': 'react/jsx-runtime',
     'react-dom': 'ReactDOM',
   },
-  banner: `/*! use-bluesky !*/`,
-  footer: '/* https://github.com/ryanhefner/use-bluesky */',
+  banner: `/*! ${pkg.name} v${pkg.version} !*/`,
+  footer: `/* ${pkg.repository.url} | ${pkg.author} */`,
 }
 
 const defaultPlugins = [peerDepsExternal(), json(), resolve(), commonjs()]
